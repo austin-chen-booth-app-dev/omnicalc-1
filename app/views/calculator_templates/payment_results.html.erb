@@ -1,0 +1,34 @@
+
+<dl>
+  <dt>
+    APR
+  </dt>
+  <dd>
+    <%= "#{@input_apr.round(4).to_s()}%" %>
+  </dd>
+
+  <dt>
+    Number of years
+  </dt>
+  <dd>
+    <%= @input_years %>
+  </dd>
+
+  <dt>
+    Principal
+  </dt>
+  <dd>
+    <%= @input_principal.to_s(:currency) %>
+  </dd>
+
+  <dt>
+    Payment
+  </dt>
+  <dd>
+    <%= @payment.to_s(:currency) %>
+  </dd>
+</dl>
+
+<a href="/payment/new">
+  Calculate another payment
+</a>
